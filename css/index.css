@@ -326,7 +326,7 @@ img {
   }
 }
 .home .content-pick .destination .btn {
-  background: #17A2B8;
+  background: #107C6F;
   color: #FFFFFF;
   width: 200px;
   border-radius: 15px;
@@ -334,10 +334,11 @@ img {
   text-align: center;
   font-size: 18px;
   display: inline-block;
-  border: 1px solid silver;
+  border: 1px solid #C0C0C0;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
+    background: #17A2B8;
     width: 100%;
   }
 }
