@@ -4,6 +4,9 @@
   max-width: 1000px;
   border-bottom: 2px dashed @navigation-border;
   padding-bottom: 25px;
+  @media @mobile {
+    margin: 18px auto 0;
+  }
  
   .top-header {
     max-width: 800px;
@@ -11,15 +14,37 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media @mobile {
+      flex-direction: column;
+    }
+
+    h1 {
+      @media @mobile {
+        font-size: 3rem;
+        margin-bottom: 1.6rem;
+      }
+    }
   }
 
   .navigation {
+    @media @mobile {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
     a {
       display: inline-block;
       margin-right: 26px;
       font-size: 17px;
       text-decoration: none;
       color: @shark;
+
+      @media @mobile {
+        margin-right: 0;
+        font-size: 16px;
+      }
     }
   }
 }
