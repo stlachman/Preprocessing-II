@@ -99,7 +99,13 @@
 				text-align: center;
 				font-size: 18px;
 				display: inline-block;
-				border: 1px solid @navigation-border;
+        border: 1px solid @navigation-border;
+        .primary-hover(all, 0.35s, ease-in-out);
+        
+        &:hover {
+          background: darken(@button-bg, 20%);
+          cursor: pointer;
+        }
 
 				@media @mobile {
           background: @button-bg;

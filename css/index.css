@@ -335,6 +335,14 @@ img {
   font-size: 18px;
   display: inline-block;
   border: 1px solid #C0C0C0;
+  -webkit-transition: 0.35s all ease-in-out;
+  -moz-transition: 0.35s all ease-in-out;
+  -o-transition: 0.35s all ease-in-out;
+  transition: 0.35s all ease-in-out;
+}
+.home .content-pick .destination .btn:hover {
+  background: #0c525d;
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
