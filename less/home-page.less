@@ -1,7 +1,7 @@
 .home {
 
   .intro-section {
-    border-bottom: 2px dashed @silver;
+    border-bottom: 2px dashed @navigation-border;
     padding-bottom: 10px;
 
     .text-content {
@@ -65,6 +65,15 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .primary-btn(@button-bg, @white, 200px, 15px);
+        padding: 13px 30px;
+        text-align: center;
+        font-size: 18px;
+        display: inline-block;
+        border: 1px solid silver;
+      }
     }
   }
 }// home
