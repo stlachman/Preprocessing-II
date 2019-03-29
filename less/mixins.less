@@ -1,1 +1,14 @@
 // Mixins in here
+.primary-btn(@bgColor: @button-bg, @color: @white, @width: 200px, @borderRadius: 15px) {
+  background: @bgColor;
+  color: @color;
+  width: @width;
+  border-radius: @borderRadius;
+}
+
+.transition(@time: 0.5s, @property: all, @function: ease-in-out) {
+	-webkit-transition:@property @time @function;
+	-moz-transition:@property @time @function;
+	-o-transition:@property @time @function;
+	transition:@property @time @function;
+}
